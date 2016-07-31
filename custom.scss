@@ -1,0 +1,69 @@
+@import "compass/css3";
+
+.header{
+	height: 30px;
+}
+
+.head{
+	height: 105px;
+	background: #FFFF00;
+}
+
+#logo{
+	float:left;
+	padding:10px 0 0 40px;
+}
+
+ul{
+	list-style: none;
+	font-family:'Trebuchet MS';
+  	font-size:17px;
+  	text-align:center;
+ 	margin-top:20px;
+}
+
+li{
+	position: relative;
+	display: inline;	
+}
+
+li a{
+	
+	color:#333;
+	display:inline-block;
+	padding:10px;
+	text-decoration:none;
+}
+
+.bar{
+	display:block;
+	width:calc(100% - 23px);
+	height:4px;
+	background:#0088CC;
+  	position:absolute;
+  	left:10px;
+  	bottom:-10px;
+}
+
+li a:hover {
+ 	color:#0088CC;
+ 	text-decoration:none;
+}
+
+li a:hover ~ span {
+ 	animation: ul 0.3s ease-out;
+   	background: #333;
+}
+
+@keyframes ul {
+ 	0% { 
+    width:0;
+  }
+  100% { 
+    width:calc(100% - 23px);
+  }
+}
+
+.navbar{
+	
+}
